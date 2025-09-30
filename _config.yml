@@ -1,5 +1,5 @@
 # Remote theme directory
-remote_theme: analytics-link/analytics-link.github.io
+remote_theme: raviriley/agency-jekyll-theme
 
 plugins:
   - jekyll-paginate
@@ -51,4 +51,5 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
