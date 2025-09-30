@@ -18,14 +18,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 subtitle: Salesforce <span style="color:#f58506"> Portfolio </span>
 location: "Pittsburgh, PA"
 resume_url: Email me for Resume
-avatar_image: /img/profile_picture.JPG
+avatar_image: /img/profile-picture.JPG
 
 #-------------------------------
 # Contact links
 linkedln: "https://www.linkedin.com/in/priyasfdc/" # Add your linkedln handle
 github: "https://github.com/GajapriyaSubbiah"  # Add your github handle
 trailhead: "https://trailblazer.me/id/gajasubbiah"  # Add your github handle
-#Products: "https://gajapriyasubbiah.github.io/sales"   Add your github handle
+Products: "https://gajapriyasubbiah.github.io/sales"   Add your github handle
 
 paginate: 6
 paginate_path: "/page/:num"
@@ -53,6 +53,7 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
 
 
