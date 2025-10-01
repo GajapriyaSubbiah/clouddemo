@@ -24,7 +24,6 @@ avatar_image: /img/profile-picture.jpg
 linkedln: "https://www.linkedin.com/in/priyasfdc/" # Add your linkedln handle
 github: "https://github.com/GajapriyaSubbiah"  # Add your github handle
 trailhead: "https://trailblazer.me/id/gajasubbiah"  # Add your github handle
-Products: "https://trailblazer.me/id/gajasubbiah"   Add your github handle
 
 paginate: 6
 paginate_path: "/page/:num"
@@ -52,6 +51,7 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
 
 
