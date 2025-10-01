@@ -24,19 +24,10 @@
 						<div class="menu-links">
 							<ul class="list-reset">
 								{% if site.location %}<li class="item"><a class="item-link"><i class="ion ion-ios-pin"></i> {{ site.location }}</a></li>{% endif %}
-								{% if site.github %}<li class="item"><a class="item-link" href="{{ site.github }} target="_blank""><i class="ion ion-logo-github"></i> Github</a></li>{% endif %}
-								{% if site.linkedin or site.linkedln %}<li class="item"><a class="item-link" href="{{ site.linkedin | default: site.linkedln }} target="_blank""><i class="ion ion-logo-linkedin"></i> LinkedIn</a></li>{% endif %}
-								{% if site.trailhead %}<li class="item"><a class="item-link" href="{{ site.trailhead }} target="_blank""><i class="ion ion-ios-document"></i> Trailhead</a></li>{% endif %}
-                                {% if site.Products %}
-									<li class="item dropdown">
-									  <a class="item-link" href="#"><i class="ion ion-ios-document"></i> Products</a>
-									  <ul class="dropdown-menu">
-									    {% for product in site.Products %}
-									      <li><a href="{{ product.url }}" target="_blank">{{ product.name }}</a></li>
-									    {% endfor %}
-									  </ul>
-									</li>
-								{% endif %}
+								{% if site.github %}<li class="item"><a class="item-link" href="{{ site.github }}" target="_blank"><i class="ion ion-logo-github"></i> Github</a></li>{% endif %}
+								{% if site.linkedin or site.linkedln %}<li class="item"><a class="item-link" href="{{ site.linkedin | default: site.linkedln }}" target="_blank"><i class="ion ion-logo-linkedin"></i> LinkedIn</a></li>{% endif %}
+								{% if site.trailhead %}<li class="item"><a class="item-link" href="{{ site.trailhead }}" target="_blank"><i class="ion ion-ios-document"></i> Trailhead</a></li>{% endif %}
+                                {% if site.Products %}<li class="item"><a class="item-link" href="{{ site.Products }}"><i class="ion ion-ios-document"></i> Products</a></li>{% endif %}
 							</ul>
 						</div>
 					</div>
