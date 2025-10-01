@@ -17,7 +17,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # About Section
 subtitle: Salesforce <span style="color:#f58506"> Portfolio </span>
 location: "Pittsburgh, PA"
-resume_url: Email me for Resume
+resume_url: "Email me for Resume"
 avatar_image: /img/profile-picture.jpg
 #-------------------------------
 # Contact links
@@ -51,6 +51,7 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
 
 
