@@ -9,7 +9,7 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Gaja priya Subbiah
-description: "123Hi I'm Gaja priya Subbiah, and I'm a Salesforce Developer.  My portfolio focuses on interesting projects I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume) by using the links below!"
+description: "1235Hi I'm Gaja priya Subbiah, and I'm a Salesforce Developer.  My portfolio focuses on interesting projects I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume) by using the links below!"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -52,6 +52,7 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
 
 
