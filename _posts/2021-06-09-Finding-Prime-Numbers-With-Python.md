@@ -5,7 +5,7 @@ image: "/posts/primes_image.jpeg"
 tags: [Python, Primes]
 ---
 
-Welcome
+Welcome123
 
 ---
 
