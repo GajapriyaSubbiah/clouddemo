@@ -7,19 +7,20 @@ layout: default
             <div class="row">
                 {% for post in paginator.posts %}
                     {% include post-card.html %}
+                
+                    <!-- New Section: Connect With Me -->
+                    <div class="row">
+                        <div class="col col-12 col-t-12 text-center">
+                            <p>
+                                <a href="{{ site.github }}" target="_blank">Trailhead</a> |
+                                <a href="{{ site.linkedin }}" target="_blank">Products</a>
+                            </p>
+                        </div>
+                    </div>
                 {% endfor %}
             </div>
             {% include pagination.html %}
         </div>
     </div>
-    <!-- New Section: Connect With Me -->
-    <div class="row">
-        <div class="col col-12 col-t-12 text-center">
-            <h2>Connect With Me</h2>
-            <p>
-                <a href="{{ site.github }}" target="_blank">GitHub</a> |
-                <a href="{{ site.linkedin }}" target="_blank">LinkedIn</a>
-            </p>
-        </div>
-    </div>
 </div>
+
