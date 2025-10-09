@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Field Generation Prompt Template with Einstein Generative AI
-image: "/posts/primes_image.jpeg"
+image: "/posts/einstein-ai-prompt.jpeg"
 tags: [Einstein Generative AI, Prompt Template, Field Generation]
 ---
 
