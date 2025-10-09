@@ -33,11 +33,10 @@ sass:
   sass_dir: _sass
   style: compressed # possible values: nested expanded compact compressed
 
-nav:
-  - title: "Home"
-    url: "/"
-  - title: "Products"
-    url: "/products"
+navbar-links:
+  Products Handon:
+    - Product 1: "products-handon/product1"
+    - Product 2: "products-handon/product2"
 
 permalink: /products
 

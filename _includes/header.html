@@ -27,7 +27,20 @@
 								{% if site.github %}<li class="item"><a class="item-link" href="{{ site.github }}" target="_blank"><i class="ion ion-logo-github"></i> Github</a></li>{% endif %}
 								{% if site.linkedin or site.linkedln %}<li class="item"><a class="item-link" href="{{ site.linkedin | default: site.linkedln }}" target="_blank"><i class="ion ion-logo-linkedin"></i> LinkedIn</a></li>{% endif %}
 								{% if site.trailhead %}<li class="item"><a class="item-link" href="{{ site.trailhead }}" target="_blank"><i class="ion ion-ios-document"></i> Trailhead</a></li>{% endif %}
-                                {% if site.Products %}<li class="item"><a class="item-link"  href="{{ site.baseurl }}/products"><i class="ion ion-ios-document"></i> Products</a></li>{% endif %}
+                                {% for section in site.navbar-links %}
+  {% if section[1] contains 'http' %}
+    <li><a href="{{ section[1] }}">{{ section[0] }}</a></li>
+  {% elsif section[1] contains 'Array' %}
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ section[0] }} <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        {% for item in section[1] %}
+          <li><a href="{{ item[1] }}">{{ item[0] }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endif %}
+{% endfor %}
 							</ul>
 						</div>
 					</div>
