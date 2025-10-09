@@ -9,7 +9,7 @@ tags: [Einstein Generative AI, Prompt Template, Field Generation]
 
 The scenario centers on a familiar challenge: managing customer support cases. To enhance productivity and improve customer satisfaction, you’ll leverage generative AI to create concise, 100-word summaries of case details. These AI-generated summaries help agents get up to speed faster and make it easier to spot cases that require extra attention.
 
-Create a prompt template
+**Create a prompt template**
 
 In Setup → Prompt Builder, click New Prompt Template.
 
@@ -31,7 +31,13 @@ You’ll then replace placeholders like COMMENTS, SUBJECT, PRIORITY, and TYPE wi
 Finally, select which LLM model to use (for example, OpenAI GPT-4 Omni Mini) and save.
 
 ```ruby
-primes_list = []
+**To make the summary field accessible in the UI:**
+
+- Edit the Case Lightning page and upgrade to Dynamic Forms (if not already).
+
+- For the Quick Summary field, set its Prompt Template to the one you created.
+
+- Save and activate that page configuration.
 ```
 
 Once live, users will see a prompt icon beside the field — click it, and Einstein will suggest a summary based on your template. They can accept the suggestion (or iterate further) and then save it.
