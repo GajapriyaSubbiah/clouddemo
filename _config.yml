@@ -34,8 +34,8 @@ sass:
 
 navbar-links:
   Products Handson:
-    - Product 1: "products-handson/product1"
-    - Product 2: "products-handson/product2"
+    - Product 1: "/products-handson/product1"
+    - Product 2: "/products-handson/product2"
 
 
 defaults:
