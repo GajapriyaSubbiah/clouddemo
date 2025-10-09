@@ -33,8 +33,12 @@ sass:
   sass_dir: _sass
   style: compressed # possible values: nested expanded compact compressed
 
-layout: page
-title: "products"
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "Products"
+    url: "/products"
+
 permalink: /products
 
 defaults:

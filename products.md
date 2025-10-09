@@ -1,6 +1,8 @@
+<!-- products.md -->
 ---
-title: Products
-subtitle: Proven Experience with Salesforce Products/Clouds
-layout: product-category
-show_sidebar: false
+layout: page
+title: "Products"
+permalink: /products
 ---
+
+Welcome to the products page
