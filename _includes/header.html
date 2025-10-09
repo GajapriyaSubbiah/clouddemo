@@ -28,20 +28,23 @@
 								{% if site.linkedin or site.linkedln %}<li class="item"><a class="item-link" href="{{ site.linkedin | default: site.linkedln }}" target="_blank"><i class="ion ion-logo-linkedin"></i> LinkedIn</a></li>{% endif %}
 								{% if site.trailhead %}<li class="item"><a class="item-link" href="{{ site.trailhead }}" target="_blank"><i class="ion ion-ios-document"></i> Trailhead</a></li>{% endif %}
                                 {% for section in site.navbar-links %}
-								{% assign links = section[1] %}
-								{% if links.first[1] %}
-									<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ section[0] }} <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										{% for item in links %}
-										<li><a href="{{ item[1] | relative_url }}">{{ item[0] }}</a></li>
-										{% endfor %}
-									</ul>
-									</li>
-								{% else %}
-									<li><a href="{{ links | relative_url }}">{{ section[0] }}</a></li>
-								{% endif %}
+									{% assign links = section[1] %}
+									{% if links.first %}
+										<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ section[0] }} <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											{% for item in links %}
+											{% assign name = item | first %}
+											{% assign url = item[name] %}
+											<li><a href="{{ url | relative_url }}">{{ name }}</a></li>
+											{% endfor %}
+										</ul>
+										</li>
+									{% else %}
+										<li><a href="{{ links | relative_url }}">{{ section[0] }}</a></li>
+									{% endif %}
 								{% endfor %}
+
 
 							</ul>
 						</div>
