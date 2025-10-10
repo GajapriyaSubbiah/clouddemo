@@ -34,7 +34,7 @@ sass:
 
 navbar-links:
   Products Handson:
-    - Product 1: "{{ site.baseurl }}/products-handson/product1"
+    - Product 1: "{{ site.baseurl }}""
     - Product 2: "/products-handson/product2"
 
 
