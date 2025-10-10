@@ -31,21 +31,21 @@
 									{% assign section_name = section[0] %}
 									{% assign section_links = section[1] %}
 
-									{% if section_links.first %}
-										<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ section_name }} <b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											{% for link in section_links %}
-											{% assign label = link | first %}
-											{% assign href = link[label] %}
-											<li><a href="{{ href | relative_url }}">{{ label }}</a></li>
-											{% endfor %}
-										</ul>
-										</li>
-									{% else %}
-										<li><a href="{{ section_links | relative_url }}">{{ section_name }}</a></li>
-									{% endif %}
-									{% endfor %}
+										{% if section_links.first %}
+											<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ section_name }} <b class="caret"></b></a>
+											<ul class="dropdown-menu">
+												{% for link in section_links %}
+												{% assign label = link | first %}
+												{% assign href = link[label] %}
+												<li><a href="{{ href | relative_url }}">{{ label }}</a></li>
+												{% endfor %}
+											</ul>
+											</li>
+										{% else %}
+											<li><a href="{{ section_links | relative_url }}">{{ section_name }}</a></li>
+										{% endif %}
+								{% endfor %}
                             </ul>
 						</div>
 					</div>
